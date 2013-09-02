@@ -1,0 +1,76 @@
+# Forelesning 02.09.2013 #
+
+## Strings ##
+
+* In C a string is defined as a characer array terminated by an ASCII zero, i.e. '\0'.
+
+* Thus it is necessary tp declare a character array to be one character longer than the longest string to hold.
+
+* Manipulation and comparison of string may be performed by a wide range of functions, e.g.:
+
+	strcpy(s1,s2)	// Copies s2 to s1
+	strcat(s1,s2)	// Concatenate s1 and s2
+	strlen(s1)		// Returns len
+	strcmp(s1,s2)	// Returns 0 if s1 and s2 is the same, <0 if s1 < s2 ...
+
+
+## File opening ##
+
+Use the fopen funtion, which returns a FILE* pointer. All file operations have to go through the pointer. fopen returns null on failure.
+
+	FILE *fopen(const char *filename, const char *mode)
+
+Mode may be ...
+* r : Read only
+ 
+* w : Write
+
+* a : Append
+
+* r+ : Read and write, start at beginning 
+
+...
+
+## File positioning ##
+
+Positioning in an open file is performed by
+
+	int fseek(FILE*pFile, long offset, int origin)
+
+Returns zero if performed successfully, otherwise nonzero.
+
+
+## File reading ##
+
+Reads a number of bytes from a file. See code.
+
+
+## SEGY format ##
+
+	|-------------- 3840B -------------|
+	3200B			400B			240B 				NSamples*4B
+	EBCDIC header 	Binary header 	Trace header #1 	Trace #1 		Trace #2 ...
+
+Note that 4B per trace is the standard, but it might be 1B too (and it is in our files).
+
+
+## Pointers ##
+
+* Lets functions modify calling arguments.
+
+* Can improve efficienct of certain routines.
+
+* Uninitialized pointers -> Program crash
+
+* Easily misused and can leads to bugs that are hard to find.
+
+	a = &B;		// Address of
+	*a = 21;	// dereference assignment
+	b = *a;		// dereference assignment
+
+
+## Parameter passing ##
+
+* Standard in C is pass by value.
+
+* You may also use pass by reference. See passbyref.c
