@@ -3,7 +3,7 @@
 #define HEIGHT 13483
 #define WIDTH 1750
 
-int matrix[HEIGHT][WIDTH];
+signed int matrix[HEIGHT][WIDTH];
 
 
 void ReadSEGYTraceSamples (char *fileName)
@@ -27,15 +27,23 @@ void ReadSEGYTraceSamples (char *fileName)
 			* 	count - Number of elements to read
 			* 	stream - Pointer to a file object to use as input stream
 			*/
-			fread(&matrix[WIDTH][HEIGHT], 1, 1, fileP);
+			fread(&matrix[i][j], 1, 1, fileP);
 		}
 	}
 	fclose(fileP);
 }
 
+void printSampleValues() {
+	for (int i = 40; i < 54; i++)
+	{
+		printf("%d ", matrix[50][i]);
+	}
+	printf("\n");
+}
 
 int main(int argc, char const *argv[])
 {
 	ReadSEGYTraceSamples("../../../SEGY/NVGT-88-06.sgy");
+	printSampleValues();
 	return 0;
 }
