@@ -3,6 +3,11 @@
 #define HEIGHT 13483
 #define WIDTH 1750
 
+/* 
+* 	Using char because each value in the data file is 
+* 	one byte, and so is a char-element. int causes problems
+* 	because it contains 4 bytes.
+*/
 char matrix[HEIGHT][WIDTH];
 
 
@@ -36,7 +41,7 @@ void ReadSEGYTraceSamples (char *fileName)
 void printSampleValues() {
 	for (int i = 40; i < 55; i++)
 	{
-		printf("%d ", matrix[50][i]);
+		printf("%d ", matrix[50][i]); // Printing char as digit
 	}
 	printf("\n");
 }
