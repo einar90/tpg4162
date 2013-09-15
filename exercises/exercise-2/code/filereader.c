@@ -34,7 +34,7 @@ void ReadSEGYTraceSamples (char *fileName)
 }
 
 void printSampleValues() {
-	for (int i = 40; i < 54; i++)
+	for (int i = 40; i < 55; i++)
 	{
 		printf("%d ", matrix[50][i]);
 	}
