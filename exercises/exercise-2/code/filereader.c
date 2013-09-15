@@ -3,7 +3,7 @@
 #define HEIGHT 13483
 #define WIDTH 1750
 
-signed int matrix[HEIGHT][WIDTH];
+unsigned int matrix[HEIGHT][WIDTH];
 
 
 void ReadSEGYTraceSamples (char *fileName)
