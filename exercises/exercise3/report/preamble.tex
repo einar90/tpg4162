@@ -1,0 +1,84 @@
+% General packages
+\usepackage{parskip}      % Vertical space on new paragraph instead of indent
+\usepackage{hyperref}   % For including links
+\usepackage{url}          % Allows adding url's
+\usepackage[top=4cm, bottom=4cm]{geometry}     % Easier management of page dimensions
+\usepackage{chngcntr}     % Customizable counters
+\usepackage{enumitem}     % Can use [noitemsep] on lists to reduce spacing
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{afterpage} 	% Various tweaks for page breaks and stuff
+
+% BEGIN Floats
+\usepackage[bf, hang, small]{caption}	% Nicer captions for floats.
+\usepackage{float}        % Allows advanced placement options for floats
+% \usepackage{subfig}		% Sub-figures. Crashes with captions package
+% END Floats
+
+
+% BEGIN Tables
+\usepackage{booktabs}		% More professional looking tables
+\usepackage{tabularx}		% Allows width adjustment etc. for tables
+\usepackage{multirow}		% Allows table cells to span rows or columns
+
+
+
+
+% Font specific packages
+\usepackage{fontspec}
+\usepackage{textcomp}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{inconsolata}
+\usepackage[default]{droidserif}
+
+% Specifying fonts
+\setsansfont{Open Sans}
+\setmainfont[Scale=0.80]{Droid Serif}
+\fontspec{Inconsolata}
+\setmonofont[Scale=0.80]{Inconsolata}
+\newfontfamily\headingfont[]{Open Sans}
+\newfontfamily\headingfont[]{Open Sans}
+\titleformat*{\section}{\Large\headingfont}
+\titleformat*{\subsection}{\large\headingfont}
+\titleformat*{\subsubsection}{\normalsize\headingfont}
+\renewcommand{\maketitlehooka}{\headingfont}
+
+
+
+\usepackage{moreverb}     % Allows use of tables in verbatim
+\usepackage{fancyvrb}     % Fancy verbatim stuff
+\usepackage{listings}     % Source code listings
+\usepackage[usenames,dvipsnames]{color}		% Used for colors by various other packages
+
+% Configuring listings
+\definecolor{light-gray}{RGB}{250,250,250} 	% Background color for listings
+\definecolor{gray}{RGB}{100,100,100} 	% Color for line-numbers
+\lstset{
+	language={C},			% the language of the code
+	aboveskip=1em,
+	belowskip=-3em,
+	basicstyle=\ttfamily\footnotesize,
+	backgroundcolor=\color{light-gray},
+	frame=single,				% adds a frame around the code
+	rulecolor=\color{black},	% frame color
+	captionpos=t,				% sets the caption-position to bottom
+	breaklines=true,			% sets automatic line breaking
+	breakatwhitespace=false,	% automatic breaks only at whitespace?
+	keepspaces=true,			% keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+	tabsize=4,					% sets default tabsize to 2 spaces
+	commentstyle=\color{green},	% comment style
+	keywordstyle=\color{blue},	% keyword style
+	stringstyle=\color{red},	% string literal style
+	numbers=left,				% line-number position: none, left or right
+	numbersep=5pt,				% how far the line-numbers are from the code
+	numberstyle=\tiny\color{gray}, % the style that used for line-numbers
+	stepnumber=2,				% step between two line-numbers.
+	showspaces=false,			% show spaces everywhere with underscores
+	showtabs=false,				% show tabs within strings with underscores
+	showstringspaces=false,		% underline spaces within strings only
+	escapeinside={\%*}{*)},		% if you want to add LaTeX within your code
+	title=\lstname				% show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+
+\usepackage{cite}
