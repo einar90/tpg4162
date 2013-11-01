@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DGL", "..\DGL\DGL\DGL.vcxproj", "{74F86D38-EB8D-4840-AA9E-26CF4807DFD8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1 -Simple Drawing", "Simple Drawing\Simple Drawing.vcxproj", "{151D7EE7-9A23-4E99-85F0-3CE343516A1D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2 - Colors and Stuff", "Colors and stuff\Enkel Tegning.vcxproj", "{81D570AD-05D8-4D77-B0EF-96B4FF36B455}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "5 - Texturing", "Texturing\Texturing.vcxproj", "{D32CDBA9-6419-4686-9C6E-454233B845FC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3 - Simple Transformations", "Transformations part 1\Transformations pt 1.vcxproj", "{08109A1A-3ECC-4A87-92D1-4A616BD80339}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "4 - More Transformations", "Transformations part 2\Transformations pt 2.vcxproj", "{54C80033-3438-4E35-A95E-E2DD2E4A4C88}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "6 - Lights", "Lights\Lights.vcxproj", "{548AD664-1567-4184-8CFA-FD113FA707D0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7 - VBO", "VBO\VBO.vcxproj", "{C6060C67-635D-4100-8EFE-E9FD1A0F8AA3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74F86D38-EB8D-4840-AA9E-26CF4807DFD8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{74F86D38-EB8D-4840-AA9E-26CF4807DFD8}.Debug|Win32.Build.0 = Debug|Win32
+		{74F86D38-EB8D-4840-AA9E-26CF4807DFD8}.Release|Win32.ActiveCfg = Release|Win32
+		{74F86D38-EB8D-4840-AA9E-26CF4807DFD8}.Release|Win32.Build.0 = Release|Win32
+		{151D7EE7-9A23-4E99-85F0-3CE343516A1D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{151D7EE7-9A23-4E99-85F0-3CE343516A1D}.Debug|Win32.Build.0 = Debug|Win32
+		{151D7EE7-9A23-4E99-85F0-3CE343516A1D}.Release|Win32.ActiveCfg = Release|Win32
+		{151D7EE7-9A23-4E99-85F0-3CE343516A1D}.Release|Win32.Build.0 = Release|Win32
+		{81D570AD-05D8-4D77-B0EF-96B4FF36B455}.Debug|Win32.ActiveCfg = Debug|Win32
+		{81D570AD-05D8-4D77-B0EF-96B4FF36B455}.Debug|Win32.Build.0 = Debug|Win32
+		{81D570AD-05D8-4D77-B0EF-96B4FF36B455}.Release|Win32.ActiveCfg = Release|Win32
+		{81D570AD-05D8-4D77-B0EF-96B4FF36B455}.Release|Win32.Build.0 = Release|Win32
+		{D32CDBA9-6419-4686-9C6E-454233B845FC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D32CDBA9-6419-4686-9C6E-454233B845FC}.Debug|Win32.Build.0 = Debug|Win32
+		{D32CDBA9-6419-4686-9C6E-454233B845FC}.Release|Win32.ActiveCfg = Release|Win32
+		{D32CDBA9-6419-4686-9C6E-454233B845FC}.Release|Win32.Build.0 = Release|Win32
+		{08109A1A-3ECC-4A87-92D1-4A616BD80339}.Debug|Win32.ActiveCfg = Debug|Win32
+		{08109A1A-3ECC-4A87-92D1-4A616BD80339}.Debug|Win32.Build.0 = Debug|Win32
+		{08109A1A-3ECC-4A87-92D1-4A616BD80339}.Release|Win32.ActiveCfg = Release|Win32
+		{08109A1A-3ECC-4A87-92D1-4A616BD80339}.Release|Win32.Build.0 = Release|Win32
+		{54C80033-3438-4E35-A95E-E2DD2E4A4C88}.Debug|Win32.ActiveCfg = Debug|Win32
+		{54C80033-3438-4E35-A95E-E2DD2E4A4C88}.Debug|Win32.Build.0 = Debug|Win32
+		{54C80033-3438-4E35-A95E-E2DD2E4A4C88}.Release|Win32.ActiveCfg = Release|Win32
+		{54C80033-3438-4E35-A95E-E2DD2E4A4C88}.Release|Win32.Build.0 = Release|Win32
+		{548AD664-1567-4184-8CFA-FD113FA707D0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{548AD664-1567-4184-8CFA-FD113FA707D0}.Debug|Win32.Build.0 = Debug|Win32
+		{548AD664-1567-4184-8CFA-FD113FA707D0}.Release|Win32.ActiveCfg = Release|Win32
+		{548AD664-1567-4184-8CFA-FD113FA707D0}.Release|Win32.Build.0 = Release|Win32
+		{C6060C67-635D-4100-8EFE-E9FD1A0F8AA3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C6060C67-635D-4100-8EFE-E9FD1A0F8AA3}.Debug|Win32.Build.0 = Debug|Win32
+		{C6060C67-635D-4100-8EFE-E9FD1A0F8AA3}.Release|Win32.ActiveCfg = Release|Win32
+		{C6060C67-635D-4100-8EFE-E9FD1A0F8AA3}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

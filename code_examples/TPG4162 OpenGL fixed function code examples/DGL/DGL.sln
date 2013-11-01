@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C++ Express 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DGL", "DGL\DGL.vcproj", "{151D7EE7-9A23-4E99-85F0-3CE343516A1D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{151D7EE7-9A23-4E99-85F0-3CE343516A1D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{151D7EE7-9A23-4E99-85F0-3CE343516A1D}.Debug|Win32.Build.0 = Debug|Win32
+		{151D7EE7-9A23-4E99-85F0-3CE343516A1D}.Release|Win32.ActiveCfg = Release|Win32
+		{151D7EE7-9A23-4E99-85F0-3CE343516A1D}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
