@@ -149,12 +149,12 @@ void createTextures()
 
     // With mipmaps
     gluBuild2DMipmaps (
-                        GL_TEXTURE_2D,          //GLenum    target,
-                        3,                      //GLint   internalFormat,
-                        TEX_WIDTH, TEX_HEIGHT,  //GLsizei   width, height,
-                        GL_RGB,                 //GLenum    format,
-                        GL_UNSIGNED_BYTE,       //GLenum    type,
-                        &textureRGBArray[i]     //const void *    data
+                        GL_TEXTURE_2D,      //GLenum    target,
+                        3,                  //GLint   internalFormat,
+                        TEX_WIDTH, TEX_HEIGHT,         //GLsizei   width, height,
+                        GL_RGB,             //GLenum    format,
+                        GL_UNSIGNED_BYTE,   //GLenum    type,
+                        &textureRGBArray[i] //const void *    data
                       );
   }
 }
